@@ -1,0 +1,216 @@
+/* Estilos de Imágenes del equipo*/
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.box{
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+.card{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.card:before,
+.card:after
+{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #ddd;
+  transition: 0.5s;
+  z-index:-1;
+}
+.card:hover:before{
+transform: rotate(20deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card:hover:after{
+transform: rotate(10deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.card .imgBx{
+position: absolute;
+top: 10px;
+left: 10px;
+bottom: 10px;
+right: 10px;
+background: #222;
+transition: 0.9s;
+z-index: 1;
+}
+
+.card:hover .imgBx
+{
+  bottom: 500px;
+}
+
+.card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 300px;
+    text-align: center;
+}
+
+.card .details h4{
+ margin: 0;
+ padding: 0;
+ font-weight: 600;
+ font-size: 20px;
+ color: #fff;
+ text-transform: uppercase;
+} 
+
+.card .details h4 span{
+font-size: 15px;
+color: #e8af4e;
+display: block;
+margin-top: 5px;
+ } 
+
+ #descripcion {
+  font-size: 14px;
+ }
+
+ #linkedin {
+  width: 40px;
+ }
+
+ #git {
+  width: 45px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+           /*estilos del body*/
+    body {      
+    background-color: white;
+    font-family: 'Carrois Gothic', sans-serif;
+        } 
+
+        h1{
+            font-family: 'Carrois Gothic SC', sans-serif;
+            margin-left: 10%;
+        }
+        .container h2{
+            text-align: center;
+            background-color: #C2943F;
+            width: 33.33%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 33.33%;
+            margin-right: 33.33%;
+            border-radius: 30px;  
+            box-shadow: 0px 4px 4px;
+            font-family: 'Carrois Gothic SC', sans-serif;
+        }
+      
+        @media (max-width: 440px) {
+            .container h2{
+              width: 80%;
+              margin-left: 10%;
+              margin-right: 10%;
+            }          
+        }
+
+        .col h3{
+            text-align: center;
+            background-color: #C2943F;
+            width: 33.33%;
+            margin-left: 33.33%;
+            margin-right: 33.33%;
+            border-radius: 30px;  
+            box-shadow: 0px 4px 4px;
+            font-family: 'Carrois Gothic SC', sans-serif;
+        }
+        .row h3{
+            text-align: center;
+            background-color: #C2943F;
+            width: 33.33%;
+            margin-left: 33.33%;
+            margin-right: 33.33%;
+            border-radius: 30px;  
+            box-shadow: 0px 4px 4px; 
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-family: 'Carrois Gothic SC', sans-serif;
+        }
+
+        @media (max-width:990px){
+            .row h3 {
+              width: 80%;
+              margin-left: 10%;
+              margin-right: 10%;
+            }
+        }
+
+        .fotoRocas{
+            display: block;
+            border-radius: 30px;
+            box-shadow: 0px 4px 4px;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .somos{
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: center;
+            text-align: justify;
+        }
+
+        @media (min-width: 768px) {
+            .somos{
+            margin-left: 33.33%;
+            margin-right: 33.33%;
+            }
+        }
+
+        h1{
+          margin: 2%;
+        }
+
+  /*card-body*/
+
+  .card{
+    background-color: #282F36;
+    color: #FFFFFF;
+    margin-bottom: 30%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #C2943F;
+  }
+
+
