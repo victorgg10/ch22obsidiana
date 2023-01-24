@@ -1,23 +1,64 @@
-(function($) { // Begin jQuery
-    $(function() { // DOM ready
-      // If a link has a dropdown, add sub menu toggle.
-      $('nav ul li a:not(:only-child)').click(function(e) {
-        $(this).siblings('.nav-dropdown').toggle();
-        // Close one dropdown when selecting another
-        $('.nav-dropdown').not($(this).siblings()).hide();
-        e.stopPropagation();
-      });
-      // Clicking away from dropdown will remove the dropdown class
-      $('html').click(function() {
-        $('.nav-dropdown').hide();
-      });
-      // Toggle open and close nav styles on click
-      $('#nav-toggle').click(function() {
-        $('nav ul').slideToggle();
-      });
-      // Hamburger to X toggle
-      $('#nav-toggle').on('click', function() {
-        this.classList.toggle('active');
-      });
-    }); // end DOM ready
-  })(jQuery); // end jQuery
+document.addEventListener('DOMContentLoaded',function(){
+  agregarEncabezado();
+});
+
+function agregarEncabezado(){
+  
+
+        //link.href = 'http://fonts.googleapis.com/css?family=Oswald&effect=neon';
+        
+        let link2 = document.createElement('link');
+        
+        link2.rel = 'stylesheet';
+        link2.href =  href="../css/normalize.css"
+        document.head.appendChild(link2);
+        let link3 = document.createElement('link');
+       
+        link3.rel = 'preconnect';
+        link3.href =  href="https://fonts.googleapis.com"
+        document.head.appendChild(link3);
+
+        let link4 = document.createElement('link');
+        
+        link4.rel = 'stylesheet';
+        link4.href =  href="https://fonts.googleapis.com/css2?family=Suez+One&display=swa";
+        document.head.appendChild(link4);
+
+        let link = document.createElement('link');
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
+        link.href =  href="../css/barra.css"
+        document.head.appendChild(link);
+
+      
+  let nav = document.querySelector('header')
+    nav.innerHTML = `
+   
+    <div class="nav-contenedor">
+    <div class="parteA ">
+        <a href="index.html" class=".nav-centrado logo-cont"><img src="/images/barra/barra.png" alt="" class="logo"></a>
+    </div>
+    <div class="parteB nav-centrado resaltado">
+        <a href="index.html" class="visitado">Inicio</a>
+    </div>
+    <div class="parteC nav-centrado resaltado">
+        <a href="#" class="visitado .nav-centrado">Catálogo</a>
+    </div>
+    <div class="parteD nav-centrado">
+        <div class="encuentra">
+            <a href="#" class="visitado .nav-centrado">Encuentra tu Piedra!!</a>
+        </div>
+    </div>
+    <div class="parteE nav-centrado">
+        <div class="iconos">
+            <a href=""><img src="/images/barra/carrito.svg" alt="" class="icono iconoA"></a>
+            <a href=""><img src="/images/barra/insta.svg" alt="" class="icono iconoB"></a>
+                 <div class="iconoC iconoCBarra">
+                    <img src="/images/barra/search.svg" alt="" class=""><input type="text" class="iconoC" size="1">
+                </div>
+            <a href=""><img src="/images/barra/login.svg" alt="" class="icono iconoD"></a>
+            
+        </div>
+    </div>
+</div>`
+}
