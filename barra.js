@@ -39,10 +39,10 @@ function agregarEncabezado(){
         <a href="index.html" class=".nav-centrado logo-cont"><img src="/images/barra/barra.png" alt="" class="logo"></a>
     </div>
     <div class="parteB nav-centrado resaltado">
-        <a href="index.html" class="visitado">Inicio</a>
+        <a href="../index.html" class="visitado">Inicio</a>
     </div>
     <div class="parteC nav-centrado resaltado">
-        <a href="#" class="visitado .nav-centrado">Catálogo</a>
+        <a href="aboutus.html" class="visitado .nav-centrado">Catálogo</a>
     </div>
     <div class="parteD nav-centrado">
         <div class="encuentra">
