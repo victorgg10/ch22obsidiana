@@ -42,7 +42,7 @@ function agregarEncabezado(){
         <a href="../index.html" class="visitado">Inicio</a>
     </div>
     <div class="parteC nav-centrado resaltado">
-        <a href="aboutus.html" class="visitado .nav-centrado">Acerca de nosotros</a>
+        <a href="aboutus.html" class="visitado .nav-centrado">Nosotros</a>
     </div>
     <div class="parteD nav-centrado">
         <div class="encuentra">
