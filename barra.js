@@ -46,7 +46,7 @@ function agregarEncabezado(){
     </div>
     <div class="parteD nav-centrado">
         <div class="encuentra">
-            <a href="#" class="visitado .nav-centrado">¡Averigua tu piedra!</a>
+            <a href="#" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
         </div>
     </div>
     <div class="parteE nav-centrado">
