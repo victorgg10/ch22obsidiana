@@ -42,11 +42,11 @@ function agregarEncabezado(){
         <a href="../index.html" class="visitado">Inicio</a>
     </div>
     <div class="parteC nav-centrado resaltado">
-        <a href="aboutus.html" class="visitado .nav-centrado">Nosotros</a>
+        <a href="aboutus.html" class="visitado" .nav-centrado">Nosotros</a>
     </div>
     <div class="parteD nav-centrado">
         <div class="encuentra">
-            <a href="#" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
+            <a href="findYourRock.html" class="visitado" .nav-centrado">¡Encuentra tu piedra!</a>
         </div>
     </div>
     <div class="parteE nav-centrado">
@@ -61,4 +61,5 @@ function agregarEncabezado(){
         </div>
     </div>
 </div>`
+
 }
