@@ -214,11 +214,21 @@ label{
         display: grid;
         grid-template-columns:100%
     }
-    
+    .iconsContainer{
+        
+        flex-wrap: wrap;
+    }
+    .iconSimbol{
+        width: 100px;
+    }
 }
 
 @media only screen and (max-width:600px)  {
     
+    .iconSimbol{
+        width: 150px;
+    }
+
     .btnsContainer{
         display: flex;
     flex-wrap: wrap;
