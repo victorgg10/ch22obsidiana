@@ -73,7 +73,6 @@ h2{
     }
 
 .iconsContainer{
-
     display: flex;
     justify-content:space-between;
 }
@@ -226,14 +225,18 @@ label{
 @media only screen and (max-width:600px)  {
     
     .iconSimbol{
-        width: 150px;
+        width: 80px;
+    }
+    .iconsContainer{
+        display: flex;
+        justify-content:center;
     }
 
     .btnsContainer{
         display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2em;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2em;
     }
     
     article{
