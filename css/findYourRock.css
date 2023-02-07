@@ -23,7 +23,7 @@ html {
 
 body {
     display: block;
-    background-color:var(--color2);
+    background-color:var(--color2) !important;
 }
 
 section {
@@ -52,16 +52,15 @@ section {
     text-align: center;
 }
 
-
 h2{
     font-size: 3em;
-    
 }
 
 .signosContainer{
     border-bottom: .5em solid black;
     padding-bottom: 1em;
 }
+
 .iconSimbol img{
     opacity:0.5;
     transition: .5s ease;
@@ -156,6 +155,8 @@ p{
  .recomentationTitle{
     margin-left: 4em;
     font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+
  }
 
 .products{
