@@ -33,12 +33,14 @@ function agregarEncabezado(){
         let script2= document.createElement('script');
         
         script2.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js';
-        document.head.appendChild(script2);
+        document.body.appendChild(script2);
 
         let script = document.createElement('script');
         
         script.src = '../js/bar.js';
-        document.head.appendChild(script);
+        document.body.appendChild(script);
+
+        
 
         
 
@@ -79,7 +81,7 @@ function agregarEncabezado(){
                       <li class="li-encuentra">
                         <div class="parteD nav-centrado">
                             <div class="encuentra">
-                                <a href="#" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
+                                <a href="./findYourRock.html" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
                             </div>
                         </div>
                       </li>
@@ -92,17 +94,17 @@ function agregarEncabezado(){
                                      <div class="iconoC iconoCBarra">
                                         <img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1675874139/barra/search_vyjo8i.svg" alt="" class=""><input type="text" class="iconoC" size="1">
                                     </div>
-                                <a href=""><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1675874139/barra/login_e3b87g.svg" alt="" class="icono iconoD"></a>
+                                <a href="./login.html"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1675874139/barra/login_e3b87g.svg" alt="" class="icono iconoD"></a>
                                 
                             </div>
                       </li>
                       
                         <li>
-                            <a href="#" class="parteF">¡Encuentra tu piedra!</a>
+                            <a href="./findYourRock.html" class="parteF">¡Encuentra tu piedra!</a>
                           </li>
                       
                         <li>
-                            <a href="#" class="parteF">Contacto</a>
+                            <a href="./contacto.html" class="parteF">Contacto</a>
                           </li>
                       
                      
