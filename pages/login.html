@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/barra.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+</head>
+<body class="login-body">
+  <header></header>
+  <!--login-->
+  <div class="container">
+       <!-- inicio backbok -->
+       <div class="backbox">
+        <!-- script para que funcione el login.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- vista registro backbox -->
+        <div class="loginMsg">
+          <div class="textcontent">
+            <p class="title">NO TIENES CUENTA?</p>
+            <p>Inicia sesion para ver tus cosas.</p>
+            <button class="swth1" id="switch1">REGISTRAR</button>
+          </div>
+        </div>
+        <!-- vista inicio sesion backbox -->
+        <div class="signupMsg visibility">
+          <div class="textcontent">
+            <p class="title">YA TIENES CUENTA?</p>
+            <p>Inicia sesion para que no pierda nada.</p>
+            <button class="swth2" id="switch2">INICIAR</button>
+          </div>
+        </div>
+      </div>
+      <!-- fin backbox -->
+      <!-- inicio frontbox -->
+      <div class="frontbox">
+        <!-- vista inicio sesion frontbox -->
+        <form >
+        <div class="login">
+          <h2>INICIAR SESION</h2>
+          <div class="inputbox">
+            <input id="correoL" type="email" name="email" placeholder="Correo Electronico" autocomplete="email" required>
+            <input id="contraL" type="password" name="password" placeholder="Contraseña" required>
+          </div>
+          <p>OLVIDASTE TU CONTRASEÑA?</p>
+          <button onclick="revisarUsuarios()">INICIARC</button>
+        </div>
+      </form>
+        <!-- vista registrarse frontbox -->
+        <form>
+        <div class="signup hide">
+          <h2>REGISTRARSE</h2>
+          <div class="inputbox">
+            <input id="nombreR" type="text" name="fullname" placeholder="  Nombre Completo" required>
+            <input id="correoR" type="email" name="email" placeholder=" Correo Electronico" required>
+            <input id="contraR" type="password" name="password" placeholder=" Contraseña" required>
+          </div>
+          <button onclick="guardarUsuarios()">ENVIAR</button>
+        </div>
+        </form>
+      </div> 
+      <!-- fin frontbox -->
+  </div>
+  <script src="../js/login.js"></script>
+  <script src="../barra.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!--<script src="../js/loginComprobaciones.js"></script>-->
+</body>
+</html>
