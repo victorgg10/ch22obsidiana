@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <title>Document</title>
 </head>
-<body class="login-body">
+<body>
   <header></header>
   <!--login-->
   <div class="container">
@@ -49,24 +49,24 @@
           <button onclick="revisarUsuarios()">INICIARC</button>
         </div>
       </form>
-        <!-- vista registrarse frontbox -->
-        <form>
+      <!-- vista registrarse frontbox -->
+      <form class="registro" >
         <div class="signup hide">
           <h2>REGISTRARSE</h2>
           <div class="inputbox">
-            <input id="nombreR" type="text" name="fullname" placeholder="  Nombre Completo" required>
-            <input id="correoR" type="email" name="email" placeholder=" Correo Electronico" required>
-            <input id="contraR" type="password" name="password" placeholder=" Contraseña" required>
+            <input id="nombreR" type="text" name="nombre" placeholder="  Nombre Completo" required>
+            <input id="correoR" type="email" name="correo" placeholder=" Correo Electronico" required>
+            <input id="contraR" type="password" name="contraseña" placeholder=" Contraseña" required>
           </div>
-          <button onclick="guardarUsuarios()">ENVIAR</button>
+          <button id="boton" class="boton" type="submit" onclick="guardarUsuarios()">ENVIAR</button>
         </div>
-        </form>
-      </div> 
+      </form>
+    </div> 
       <!-- fin frontbox -->
-  </div>
+
   <script src="../js/login.js"></script>
+  <script src="../js/guardarUsuarios.js"></script>
   <script src="../barra.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <!--<script src="../js/loginComprobaciones.js"></script>-->
+  <script src="../js/loginComprobaciones.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-let $loginMsg = $('.loginMsg'),
+var $loginMsg = $('.loginMsg'),
   $login = $('.login'),
   $signupMsg = $('.signupMsg'),
   $signup = $('.signup'),
