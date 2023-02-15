@@ -53,7 +53,7 @@ function agregarEncabezado(){
     <section class="navigation">
                 <div class="nav-container">
                   <div class="brand">
-                     <a href="../index.html" class=".nav-centrado logo-cont"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1675874139/barra/barra_fkhq8b.png" alt="" class="logo"></a>
+                     <a href="../index.html" class=".nav-centrado logo-cont"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676485585/barra/logo_obsidiana_sin_letras_cj9zvx.png" alt="" class="logo"></a>
                   </div>
                   <nav>
                     <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
