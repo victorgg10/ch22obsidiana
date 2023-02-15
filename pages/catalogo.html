@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = 1050, user-scalable = yes" />
+	<title> Catálogo Digital - Obsidiana 2023 </title>
+<!-- link obsidiana --> 	
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/barra.css">
+<!-- hasta aqui link obsidiana --> 
+</head>
+
+<script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../extras/modernizr.2.5.3.min.js"></script>
+<script src="../barra.js"></script>
+
+<body>
+<!-- nav bar  <3-->
+	<header>
+    </header>
+<div>
+
+	
+
+<div class="flipbook-viewport" >
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(../catalogo/1.jpg)"></div>
+			<div style="background-image:url(../catalogo/2.jpg)"></div>
+			<div style="background-image:url(../catalogo/3.jpg)"></div>
+			<div style="background-image:url(../catalogo/4.jpg)"></div>
+			<div style="background-image:url(../catalogo/5.jpg)"></div>
+			<div style="background-image:url(../catalogo/6.jpg)"></div>
+			<div style="background-image:url(../catalogo/7.jpg)"></div>
+			<div style="background-image:url(../catalogo/8.jpg)"></div>
+			<div style="background-image:url(../catalogo/9.jpg)"></div>
+			<div style="background-image:url(../catalogo/10.jpg)"></div>
+			<div style="background-image:url(../catalogo/11.jpg)"></div>
+			<div style="background-image:url(../catalogo/12.jpg)"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<p style="text-align:center" > Catálogo Digital - Obsidiana 2023  </p>
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../lib/turn.js'],
+	nope: ['../lib/turn.html4.min.js'],
+	both: ['../css/catalogo.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
