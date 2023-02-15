@@ -65,14 +65,15 @@ function agregarEncabezado(){
                         <a href="#!">Servicios</a>
                         <ul class="nav-dropdown">
                           <li>
-                            <a href="#!">Catalogo</a>
+                            <a href="#!">Todos los Productos</a>
+                          </li>
+                          <li>
+                            <a href="../pages/tuPiedra.html">Piedra de Nacimiento</a>
                           </li>
                           <li>
                             <a href="./aboutus.html">Nosotros</a>
                           </li>
-                          <li>
-                            <a href="#!">Piedra de Nacimiento</a>
-                          </li>
+                          
                           <li>
                             <a href="./contacto.html">Contacto</a>
                           </li>
@@ -85,6 +86,9 @@ function agregarEncabezado(){
                             </div>
                         </div>
                       </li>
+                      <li>
+                      <a href="../pages/catalogo.html">Catálogo</a>
+                    </li>
                      
                       <li class="li-iconos">
                         <div class="parteE nav-centrado">

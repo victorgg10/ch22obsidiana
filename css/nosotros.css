@@ -140,7 +140,7 @@ a {
 
 /*estilos del body*/
 body {
-  background-color: white;
+  background-color: var(--color2);
   font-family: 'Carrois Gothic', sans-serif;
 }
 

@@ -1,3 +1,17 @@
+:root {
+  --fuenteNav: 'Suez One', serif;
+  --fuenteText:'Roboto Slab', serif;
+  --color1: #CFB9AD;
+  --color2: #E7DFE0;
+  --color3: #F1F3FA;
+  --color4: #A48676;
+  --color5: #30200E;
+  --color6: #76879F;
+
+}
+body{
+  background-color: var(--color2);
+}
 .login-body{
     background-color: white;
     font-family: 'Carrois Gothic', sans-serif;
