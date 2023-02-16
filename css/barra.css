@@ -23,6 +23,7 @@ html {
 body{
     margin: 0;
     font-family: var(--fuenteNav);
+    background-color: var(--color2);
 }
 img{
     max-width: 100%;
@@ -149,7 +150,7 @@ nav ul li ul li a {
     /*display: block !important;*/
     width: auto;
     display: grid;
-    grid-template-columns: 2fr 2fr 6fr 5fr;
+    grid-template-columns: 2fr 2fr 6fr 2fr 5fr;
     column-gap: 1rem;
 
   }
@@ -254,7 +255,7 @@ article {
 
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr ;
-    padding: 1rem 1rem;
+    padding: .5rem .2rem;
     column-gap: 1.2rem;
 }
 .iconos a{
@@ -292,4 +293,9 @@ article {
     
     display: flex;
    justify-content: center;
+}
+.li-iconos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
