@@ -65,7 +65,7 @@ function agregarEncabezado(){
                         <a href="#!">Servicios</a>
                         <ul class="nav-dropdown">
                           <li>
-                            <a href="#!">Todos los Productos</a>
+                            <a href="../pages/filtrar.html">Todos los Productos</a>
                           </li>
                           <li>
                             <a href="../pages/tuPiedra.html">Piedra de Nacimiento</a>
