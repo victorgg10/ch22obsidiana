@@ -19,12 +19,14 @@ html {
   }
 
 
-
-body{
-    margin: 0;
+  header{
     font-family: var(--fuenteNav);
-    background-color: var(--color2);
-}
+    }
+    body{
+        margin: 0;
+    
+        background-color: var(--color2);
+    }
 img{
     max-width: 100%;
     max-height: 100%;
