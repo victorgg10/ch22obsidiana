@@ -11,7 +11,7 @@
   }
 body{
     background-color: var(--color2);
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--fuenteText)
 
 }
 
