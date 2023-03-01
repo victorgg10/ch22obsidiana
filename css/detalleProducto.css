@@ -1,5 +1,6 @@
 :root {
     --fuenteNav: 'Suez One', serif;
+    --fuenteText: 'Roboto Slab', serif;
     --color1: #CFB9AD;
     --color2: #E7DFE0;
     --color3: #F1F3FA;
@@ -23,11 +24,11 @@ html {
 
 body {
     display: block;
-    background-color:var(--color2) !important;
+    background-color: var(--color2) !important;
 }
 
-.mainContainer{
-   /*  border: 5px solid red; */
+.mainContainer {
+    /*  border: 5px solid red; */
     display: grid;
     grid-template-columns: 40% 60%;
     /* display: flex; */
@@ -36,12 +37,13 @@ body {
     margin: 5rem 5rem 2rem 5rem;
     gap: 1rem;
 }
-.imageContainer{
+
+.imageContainer {
     /* border:5px solid green; */
 }
 
-.detailsContainer{
-   /*  border:5px solid blue; */
+.detailsContainer {
+    /*  border:5px solid blue; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -50,38 +52,40 @@ body {
 
 }
 
-.productTitle{
-   /*  border:5px solid purple; */
+.productTitle {
+    /*  border:5px solid purple; */
     font-size: 4rem;
-   
+
 }
-.productTitleMaxWidth850px{
+
+.productTitleMaxWidth850px {
     display: none;
 }
-.productDetails{
+
+.productDetails {
     /* border:5px solid purple; */
     background-color: var(--color3);
     border-radius: .5rem;
     font-size: 2rem;
 }
 
-.catalogoDiv{
-   /*  border:5px solid brown; */
+.catalogoDiv {
+    /*  border:5px solid brown; */
     font-family: var(--fuenteText);
     font-size: 2.5rem;
 }
 
 
 
-.buttonsContainer{
+.buttonsContainer {
     /* border:5px solid yellow; */
     display: flex;
     justify-content: space-evenly;
 }
 
-.btns{
+.btns {
     border: none;
-    background-color:var(--color4);
+    background-color: var(--color4);
     color: var(--color3);
     width: 13rem;
     height: 3rem;
@@ -89,7 +93,7 @@ body {
     font-size: 1.5rem;
 }
 
-.desapear{
+.desapear {
     display: none;
 }
 
@@ -98,79 +102,86 @@ body {
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
-  display: flex !important;
-  justify-content: center !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
- .recomentationTitle{
+.recomentationTitle {
     margin-left: 4em;
     font-family: 'Raleway', sans-serif;
     font-size: xx-large;
 
- }
+}
 
-.products{
+.products {
     width: 200px;
     height: auto;
 }
 
 
 
-@media only screen and (max-width:850px)  {
+@media only screen and (max-width:850px) {
 
-    .mainContainer{
+    .mainContainer {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .productTitle{
+    .productTitle {
         display: none;
     }
 
-    .productTitleMaxWidth850px{
-        display:inline;
+    .productTitleMaxWidth850px {
+        display: inline;
         font-size: 4rem;
         font-family: 'Open Sans', sans-serif;
     }
-    .productTitleMaxWidth850px{
-        text-align: center;
-     }
 
-     .detailsContainer{
-        gap:2rem;
+    .productTitleMaxWidth850px {
+        text-align: center;
+    }
+
+    .detailsContainer {
+        gap: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-     }
+    }
 
 }
 
-@media only screen and (max-width:600px)  {
-    .mainContainer{
+@media only screen and (max-width:600px) {
+    .mainContainer {
         border: 5px solid rebeccapurple;
         display: contents;
         padding: 2rem;
 
     }
 
-    .imageContainer{
-       width: auto;
+    .imageContainer {
+        width: auto;
     }
-    
+
 }
 
 
-@media only screen and (max-width:450px)  {
-    .buttonsContainer{
-    /* border:5px solid yellow; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: inherit;
+@media only screen and (max-width:450px) {
+    .buttonsContainer {
+        /* border:5px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: inherit;
     }
-    
+
 }
 
-.linkCatalogo{
+.linkCatalogo {
     text-decoration: none;
     color: var(--color5);
+}
+
+.pedido, .resumen {
+    font-family: var(--fuenteText);
+    font-size: 15px;
+    margin: 0.67em 0;
 }
