@@ -85,107 +85,12 @@
                 </div>
               </section>
         </header>
-    <br>
+    
 
     
  <!--Carrusel-->
-<style>
-  h1 {
-    text-align: center;
-    font-size: 400%;
-  }
-</style>
 
-<center><h2>Minerales Destacados</h2></center>
 
-    <style>
-.slideshow {
-    width: 650px;
-    height: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  .slides {
-    display: flex;
-    width: 400%;
-    animation: slide 20s infinite;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-      .slide {
-        width: 25%;
-      }
-      .slide img {
-        width: 100%;
-        height: 100%;
-      }
-      .slide p {
-   
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    color: black;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    font-size: 200%;
-  }
-      @keyframes slide {
-        0% {
-          transform: translateX(0);
-        }
-        20% {
-          transform: translateX(0);
-        }
-        25% {
-          transform: translateX(-25%);
-        }
-        45% {
-          transform: translateX(-25%);
-        }
-        50% {
-          transform: translateX(-50%);
-        }
-        70% {
-          transform: translateX(-50%);
-        }
-        75% {
-          transform: translateX(-75%);
-        }
-        95% {
-          transform: translateX(-75%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
-   
-    <div class="slideshow">
-      <div class="slides">
-        <div class="slide">
-          <img src="./images/carrusel/opalo.jpg">
-          <p>Ópalo Arcoíris</p>
-        </div>
-        <div class="slide">
-          <img src="./images/carrusel/amatista.jpg">
-          <p>Amatista</p>
-        </div>
-        <div class="slide">
-          <img src="./images/carrusel/turmalina.jpg">
-          <p>Turmalina Arcoíris</p>
-        </div>
-        <div class="slide">
-          <img src="./images/carrusel/elbaita.jpg">
-          <p>Elbaita Rosada</p>
-        </div>
-      </div>
-    </div>
-<br><br><br>
     <!--Mapa-->
     <style>
         iframe {
@@ -195,36 +100,16 @@
   }
     </style>
 
-<center><h2>Navega por el mapa para descubrir el mineral más representativo de cada estado, y presiona sobre ellos para más información</h2></center>
-    <iframe src="./mapa-minerales-rocas/index.html" width="1200" height="680" ></iframe>
-
-<br><br><br>
 
 
-<!--Logos de redes sociales-->
-    <div class="container-redes">
-          
-      <h1>Siguenos en nuestras redes</h1>
-      <div class="logos" style="display: flex; justify-content: center; gap: 10%;
-      padding-left: 30px">
+  <iframe frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onload="resizeIframe(this)"  scrolling="no" ></iframe>
 
-           <div class="facebook">
-           <a href="https://www.facebook.com/"><img src="./images/contacto/logoface.png" alt=""  ></a>
-
-           </div>
-
-           <div class="instagram">
-           <a href="https://www.instagram.com/"><img src="./images/contacto/instagramlogo.png" alt=""></a> 
-           </div>
-
-           <div  class="youtube">
-           <a href="https://www.youtube.com/"><img src="./images/contacto/youtubelogo.png" > </a>
-           </div>
-
-       </div>
-   </div> 
     
-        
+   <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="./js/bar.js"></script>
 </body>
