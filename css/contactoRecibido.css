@@ -1,0 +1,141 @@
+.contacto-general{
+    background-color: #E7DFE0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contacto-recibido{
+   background-color: white;
+    padding: 50px;
+    margin: 10% 10% 10% 10%;
+    
+}
+
+
+h2{
+    text-align: center;
+    margin: 10% 10% 10% 10%; 
+    font-size: 27px;
+}
+
+
+    
+   
+
+.mail-logo{
+    padding: 0% 40%;
+}
+.volver-boton{
+    padding-top: 5%;
+    margin: 10px;
+    font-size: 17px;
+}
+
+button{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #A48676;
+    border-radius: 7px;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+.container-redes, .contacto-img{
+    margin: 10% 10% 10% 10%;
+    text-align: center;
+}
+
+.logos{
+    margin: 10;
+    display: flex;
+    gap: 10%;
+    
+}
+
+@media (min-width: 950px){
+    .contacto-general{
+        background-color: #E7DFE0;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    .contacto-recibido{
+        background-color: white;
+        color:black;
+        font-size: 20px;
+        padding: 70px;
+        margin: 10% 10% 10% 10%;
+        max-width: 600px;
+    }
+    
+    
+    h2{
+        text-align: center;
+        margin: 10% 10% 10% 10%; 
+        font-size: 27px;
+    }
+    
+    
+        
+       
+    
+    .mail-logo{
+        padding: 0% 40%;
+    }
+    .volver-boton{
+        margin: 10px;
+        font-size: 17px;
+    }
+    
+    button{
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #A48676;
+        border-radius: 7px;
+        color:white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .container-redes, .contacto-img{
+        margin: 10% 10% 10% 10%;
+        text-align: center;
+    }
+    
+    .logos{
+        margin: 10;
+        display: flex;
+        gap: 10%;
+        padding-left: 13%;
+    }
+place-holder{
+    color: #A48676;
+}
+.contacto-recibido{
+    grid-area: form;
+}
+
+.contacto-img{
+    grid-area: imagen;
+}
+
+.container-redes{
+    grid-area: redes;
+    
+}
+
+.contacto-general{
+    display: grid;
+    grid:
+    "form  imagen"
+    "redes  redes"
+    
+}
+
+
+}
