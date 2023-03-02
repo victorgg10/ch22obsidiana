@@ -168,6 +168,36 @@ body{
     }
   
   }
-  @media(max-width:600px){
+
+  @media(max-height:600px){
+    .container{
+      /*border:1px solid white;*/
+      width: 250px;
+
+      height: 250px;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      display: inline-flex; 
+      
+    }
   
   }
+
+  @media(max-height:400px){
+    .container{
+      /*border:1px solid white;*/
+      width: 180px;
+
+      height: 180px;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      display: inline-flex; 
+      
+    }
+  
+  }
+ 
