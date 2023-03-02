@@ -112,6 +112,8 @@ nav ul li ul li a {
   width: 70px;
 }
 
+
+
 @media only screen and (max-width: 798px) {
   .nav-mobile {
     display: block;
@@ -147,6 +149,9 @@ nav ul li ul li a {
     position: static;
   }
 }
+
+
+
 @media screen and (min-width: 799px) {
   .nav-list {
     /*display: block !important;*/
@@ -243,6 +248,7 @@ article {
 }
 
 .parteE{
+  
     list-style: none;
     position: relative;
     padding-right: 2rem;
@@ -300,4 +306,14 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 880px) {
+.encuentra{
+  font-size: 2rem;
+}
+
+nav ul li >a {
+ 
+  font-size: 1.3rem
+}
 }
