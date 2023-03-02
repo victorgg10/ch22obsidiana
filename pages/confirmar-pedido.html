@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="../css/barra.css">
     <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="stylesheet" href="../css/tu-piedra.css">
-    <link rel="stylesheet" href="../css/detalleProducto.css">
 
-    <title>Confirmar pedido</title>
+    <title>Encuentra tu piedra</title>
 </head>
 
 <body>
@@ -27,92 +26,91 @@
 
     </header>
     <!-- Main -->
-    <main class="container-fluid">
+    <main class="container">
         <section class="row">
-            <h1 class=" m-3 col-12 text-center">Confirma tu pedido</h1>
-            <h1 class="m-3 col-12 text-center ">Artículos en el carrito de compras</h1>
+            <h1 class="col text-center text-break">Confirma tu pedido</h1>
         </section>
-        <section class="row">
+        <section class=" row">
             <!-- Resumen de pedido -->
-            <article class="row justify-content-around">
-                <!-- Tabla -->
-                <div class="col-10 col-md-6 col-lg-5 col-sm-12  compra">
-                    <table class="pedido">
-                        <thead>
-                            <tr class="row-cols-6 text-center">
-                                <th class="col-2">
+            <article class="row pedido">
+                <h1 class="text-center text-break">Artículos en el carrito de compras</h1>
+                <div class="col 12 col-sm-10 compra">
+                    <table class="row">
+                        <thead class="row" >
+                            <tr class="row text-center">
+                                <th class="col-3">
                                     Artículo
                                 </th>
-                                <th>
+                                <th class="col-3 text-center">
                                     Descripción
                                 </th>
-                                <th>
+                                <th class="col-3 text-center">
                                     Unidad
                                 </th>
-                                <th>
-                                    Cantidad
+                                <th class="col-3 text-center">
+                                    Cantidad Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore odit sint ab. Autem fugit culpa repudiandae. Voluptates qui obcaecati tenetur est, veritatis ducimus officiis excepturi ab ipsum ut quos.
                                 </th>
                             </tr>
                         </thead>
-                        <tbody class="text-center">
-                            <tr>
-                                <td>
+                        <tbody class="row">
+                            <tr class="row">
+                                <td class=" col-3 text-center">
                                     <a href="../images/filtrar/amatista.jpg">
                                         <img class="imagen-pedido img-fluid rounded"
                                             src="../images/filtrar/amatista.jpg" alt="Piedra-amatista-para-decoración">
                                     </a>
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     Amatista
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     PZA
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     1
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr class="row">
+                                <td class="col-3 text-center">
                                     <a href="../images/filtrar/labradorita.jpg">
                                         <img class="imagen-pedido img-fluid rounded"
                                             src="../images/filtrar/labradorita.jpg"
                                             alt="Piedra-labradorita-para-decoración">
                                     </a>
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     Labradorita
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     PZA
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     1
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
+                            </tr >
+                            <tr class="row">
+                                <td class="col-3 text-center">
                                     <a href="../images/filtrar/fluorita.jpg">
                                         <img class="imagen-pedido img-fluid rounded"
                                             src="../images/filtrar/fluorita.jpg" alt="Lampara-de-piedra-fluorita">
                                     </a>
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     Fluorita
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     PZA
                                 </td>
-                                <td>
+                                <td class="col-3 text-center">
                                     1
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="resumen col-10 col-md-3 col-lg-3 col-sm-6   compra">
+                <div class="col-2 compra">
                     <h1>Resumen del pedido</h1>
-                    <table>
+                    <table class="container">
                         <tr>
                             <td>
                                 Total de poductos
@@ -137,7 +135,7 @@
                                 $####.##
                             </td>
                         </tr>
-                        <tfoot>
+                        <tfoot style="text-align:center">
                             <tr>
                                 <td>Costo Total</td>
                                 <td>$####.##</td>
@@ -148,15 +146,12 @@
                     <button class="pagar" type="submit">Confirmar y proceder al pago</button>
                 </div>
             </article>
+            <div class="row">
+                <div class="col-5">1</div>
+                <div class="col-7">2</div>
+            </div>
         </section>
-        <!-- <footer class="row">
-            <div class="col-10">
-                <h1 class="text-center">Métodos de pago</h1>
-            </div>
-            <div class="col-10">
-                <img src="" alt="">
-            </div>
-        </footer> -->
+        <section></section>
     </main>
     <script src="../barra.js"></script>
 </body>
