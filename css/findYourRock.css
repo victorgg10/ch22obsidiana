@@ -23,29 +23,28 @@ html {
 
 body {
     display: block;
-    background-color: var(--color2) !important;
+    background-color:var(--color2) !important;
 }
 
 .sectionMain {
     margin: 5em 5em 2em 5em;
-    /*  display: flex;
+   /*  display: flex;
     justify-content: center;
     align-items: center; */
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
-.titleMain {
+.titleMain{
     font-size: 6em;
     border-bottom: black .1em solid;
 }
 
-.favColorContainer {
+.favColorContainer{
     border-bottom: .5em solid black;
     padding-bottom: 1em;
 }
-
-.inputAge {
+.inputAge{
     width: 9em;
     height: 2em;
     border-radius: 2em;
@@ -53,64 +52,62 @@ body {
     text-align: center;
 }
 
-h2 {
+h2{
     font-size: 3em;
 }
 
-.signosContainer {
+.signosContainer{
     border-bottom: .5em solid black;
     padding-bottom: 1em;
 }
 
-.iconSimbol img {
-    opacity: 0.5;
+.iconSimbol img{
+    opacity:0.5;
     transition: .5s ease;
-}
-
-.iconSimbol img:hover {
-    opacity: 1;
+    }
+    
+    .iconSimbol img:hover{
+    opacity:1;
     transition: 1s ease;
-}
+    }
 
-.iconsContainer {
+.iconsContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
-.age {
+.age{
     padding: 10px 20px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: black;
-    background-color: #fff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:black;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.age:hover {
-    background-color: var(--color4)
-}
+.age:hover {background-color: var(--color4)}
 
 .age:active {
-    background-color: var(--color4);
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: var(--color4);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-.btnsContainer {
+.btnsContainer{
     display: flex;
     justify-content: space-evenly;
 }
 
 /* article */
-article {
+article{
     margin: 5em 5em 2em 5em;
 }
 
-.titleResultContainer {
+.titleResultContainer{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 2em;
@@ -118,21 +115,21 @@ article {
     border-radius: 4em;
 }
 
-.resultContainer {
+.resultContainer{
     display: grid;
     grid-template-columns: 3fr 4fr;
     margin: 2em 8em 2em 8em;
     column-gap: 7em;
 }
 
-.resultDescription {
+.resultDescription{
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
 }
 
-p {
+p{
     font-size: 2em;
     text-align: justify;
     background-color: var(--color3);
@@ -140,7 +137,7 @@ p {
     line-height: 1.5em;
 }
 
-.imageResultContainer {
+.imageResultContainer{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -151,78 +148,74 @@ p {
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
-    display: flex !important;
-    justify-content: center !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
-.recomentationTitle {
+ .recomentationTitle{
     margin-left: 4em;
     font-family: 'Raleway', sans-serif;
     font-size: xx-large;
 
-}
+ }
 
-.products {
+.products{
     width: 200px;
     height: auto;
 }
 
 
-@media only screen and (max-width: 1104px) {
-
-    .cardContainer {
+@media only screen and (max-width: 1104px)  {
+    
+    .cardContainer{
         width: 300px;
-
+     
     }
-
+    
 }
 
 
-@media only screen and (max-width:850px) {
-
-    .resultContainer {
+@media only screen and (max-width:850px)  {
+    
+    .resultContainer{
         display: grid;
-        grid-template-columns: 100%
+        grid-template-columns:100%
     }
-
-    .iconsContainer {
-
+    .iconsContainer{
+        
         flex-wrap: wrap;
     }
-
-    .iconSimbol {
+    .iconSimbol{
         width: 100px;
     }
 }
 
-@media only screen and (max-width:600px) {
-
-    .iconSimbol {
+@media only screen and (max-width:600px)  {
+    
+    .iconSimbol{
         width: 80px;
     }
-
-    .iconsContainer {
+    .iconsContainer{
         display: flex;
-        justify-content: center;
+        justify-content:center;
     }
 
-    .btnsContainer {
+    .btnsContainer{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 2em;
     }
-
-    article {
-        margin: auto;
+    
+    article{
+        margin:auto;
     }
-
-    .resultContaine {
-        margin: auto;
+    .resultContaine{
+        margin:auto;
     }
-
-    .recomentationTitle {
+    .recomentationTitle{
         margin-left: 2em;
     }
-
+    
 }
+

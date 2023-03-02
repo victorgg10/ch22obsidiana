@@ -1,6 +1,6 @@
 :root {
     --fuenteNav: 'Suez One', serif;
-    --fuenteText: 'Roboto Slab', serif;
+    --fuenteText:'Roboto Slab', serif;
     --color1: #CFB9AD;
     --color2: #E7DFE0;
     --color3: #F1F3FA;
@@ -9,10 +9,9 @@
     --color6: #76879F;
 }
 
-body {
+body{
     background-color: var(--color2);
 }
-
 main {
     display: flex;
     margin: 0em 0em;
@@ -24,9 +23,9 @@ article {
     display: flex;
     /*flex-direction: column;*/
     justify-content: center;
-}
+}*/
 
-*/ .mes-nacimiento {
+.mes-nacimiento {
     /*display: grid;
     grid-template-columns: auto auto auto auto auto auto;*/
     padding: 1em;
@@ -46,8 +45,7 @@ article {
     font-size: auto;
 }
 
-.mes:hover,
-.pagar:hover {
+.mes:hover,.pagar:hover{
     box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
     background-color: --color4;
     border: 1px solid var(--color5);
@@ -61,15 +59,14 @@ article {
     justify-content: center;
 }
 
-.tu-piedra, img {
+.tu-piedra img{
     width: 100%;
     height: auto;
-    margin-left: 2em;
 }
 
 
 /* estilos de pagina "Confirma tu pedido*/
-.pedido {
+.pedido{
     background-color: --color1;
     margin: 5px 200px 10px 200px;
     display: grid;
@@ -82,19 +79,18 @@ article {
     padding: 50px;
 }
 
-.imagen-pedido {
+.imagen-pedido{
     max-width: 10%;
     height: auto;
 }
 
-td,
-th {
+td,th {
     text-align: center;
     font-size: 15px;
     padding: 2em;
 }
 
-.cupon-in {
+.cupon-in{
     width: 200px;
     height: auto;
     margin: 1em;
@@ -102,7 +98,7 @@ th {
     border-radius: 5px;
 }
 
-.pagar {
+.pagar{
     width: 200px;
     height: auto;
     margin: 1em;
@@ -111,67 +107,6 @@ th {
     border: none;
 }
 
-table,
-.compra {
+table , .compra{
     font-family: 'Carrois Gothic', sans-serif;
-}
-
-.recomentationTitle {
-    margin-left: 4em;
-    font-family: 'Raleway', sans-serif;
-    font-size: xx-large;
-
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-    display: flex !important;
-    justify-content: center !important;
-}
-
-.products {
-    width: 200px;
-    height: auto;
-}
-
-@media only screen and (max-width: 1104px) {
-
-    .cardContainer {
-        width: 300px;
-
-    }
-
-}
-
-@media only screen and (max-width:600px) {
-
-    .iconSimbol {
-        width: 80px;
-    }
-
-    .iconsContainer {
-        display: flex;
-        justify-content: center;
-    }
-
-    .btnsContainer {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2em;
-    }
-
-    article {
-        margin: auto;
-    }
-
-    .resultContaine {
-        margin: auto;
-    }
-
-    .recomentationTitle {
-        margin-left: 2em;
-    }
-
 }
