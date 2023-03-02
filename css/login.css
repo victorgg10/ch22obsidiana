@@ -9,12 +9,14 @@
   --color6: #76879F;
 
 }
+
+
 body{
   background-color: var(--color2);
 }
 .login-body{
     background-color: white;
-    font-family: 'Carrois Gothic', sans-serif;
+    font-family: 'Roboto Slab', serif;
   }
   
   .container{
@@ -60,12 +62,12 @@ body{
     font-size: 15px;
     box-sizing: border-box;
   }
-  
-  .loginMsg .title,
+  /*este ya cuenta*/
+ /*.loginMsg .title,
   .signupMsg .title{
     font-weight: 300;
     font-size: 23px;
-  }
+  }*/
   
   .loginMsg p,
   .signupMsg p {
@@ -96,13 +98,13 @@ body{
     padding: 20px;
     text-align: center;
   }
-  
-  .login h2,
+ 
+  /*registrarse*/
+  /*.login h2,
   .signup h2 {
     color: #000000;
     font-size:22px;
-  }
-  
+  }*/
   .inputbox{
     margin-top:30px; 
   }
@@ -153,7 +155,7 @@ body{
   .hide{
     display: none;
   }
-  @media(max-width:600px ){
+  @media(min-width:600px ){
     .relative{
       /*border:1px solid white;*/
       width: 300px;
@@ -166,6 +168,19 @@ body{
       display: inline-flex; 
       
     }
+
+    .loginMsg .title,
+  .signupMsg .title{
+    font-weight: 300;
+    font-size: 23px;
+  }
+
+  .login h2,
+  .signup h2 {
+    color: #000000;
+    font-size:22px;
+  }
+
   
   }
   @media(max-width:600px){
@@ -197,6 +212,13 @@ body{
       display: inline-flex; 
       
     }
+
+    .loginMsg, .signupMsg{
+      width: 50%;
+      height: 100%;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
   
   }
 
@@ -229,10 +251,25 @@ body{
       display: inline-flex; 
       
     }
+
+    .loginMsg .title,
+    .signupMsg .title{
+    font-weight: 300;
+    font-size: 13px;
+  }
   
+  .login h2,
+  .signup h2 {
+    color: #000000;
+    font-size:10px;
   }
 
-  #hide-log{
-    display: none;
+  .loginMsg, .signupMsg{
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
   }
 
