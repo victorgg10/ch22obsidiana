@@ -208,7 +208,7 @@ h1 {
 .contenedor-general {
   display: flex;
   flex-direction: column;
-  margin:0 10rem;
+  margin:0 1rem;
 
 
 
@@ -335,3 +335,29 @@ h1 {
   border-radius: 20px;
   box-shadow: 0px 4px 4px #C2943F;
 }
+
+@media(min-width:768px){
+  .contenedor-general {
+    display: flex;
+    flex-direction: column;
+    margin:0 10rem;
+  
+  
+  
+  }
+
+}
+
+@media(max-width:768px){
+.somos-texto p{
+  font-size: 1.2rem;
+}
+
+}
+
+@media(max-width:768px){
+  h3{
+    font-size: 2rem;
+  }
+  
+  }

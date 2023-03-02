@@ -200,4 +200,6 @@ body{
     }
   
   }
- 
+  #hide-log{
+    display: none;
+  }
