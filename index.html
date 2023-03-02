@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./css/principal.css">
     <title>OBSIDIANA</title>
 </head>
-<body>
+<body onresize="resizeIframe(document.querySelector('#adjusIframe'))">
 
 
     <!-- nav bar  <3--> 
@@ -102,13 +102,18 @@
 
 
 
-  <iframe frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onresize="resizeIframe(this)" onload="resizeIframe(this)"  scrolling="no" ></iframe>
+  <iframe id="adjusIframe" frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onload="resizeIframe(this)"  scrolling="no" ></iframe>
 
 
    <script>
+    
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+     //console.log(obj.style.height)
     }
+ 
+
+    
   </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="./js/bar.js"></script>
