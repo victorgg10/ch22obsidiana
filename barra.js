@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded',function(){
   agregarEncabezado();
+  
 });
 
 function agregarEncabezado(){
@@ -110,6 +111,9 @@ function agregarEncabezado(){
                         <li>
                             <a href="./contacto.html" class="parteF">Contacto</a>
                           </li>
+                          <li>
+                          <a href="./login.html" class="parteF" id="hide-log" >Login</a>
+                        </li>
                       
                      
                     </ul>
