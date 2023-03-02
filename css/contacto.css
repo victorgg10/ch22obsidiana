@@ -1,17 +1,6 @@
-:root {
-    --fuenteNav: 'Suez One', serif;
-    --fuenteText:'Roboto Slab', serif;
-    --color1: #CFB9AD;
-    --color2: #E7DFE0;
-    --color3: #F1F3FA;
-    --color4: #A48676;
-    --color5: #30200E;
-    --color6: #76879F;
-  
-  }
-body{
-    background-color: var(--color2);
-    font-family: var(--fuenteText)
+.contacto-general{
+    background-color: #E7DFE0;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -35,7 +24,6 @@ body{
     font-weight: 500;
     text-align: center;
     
-    
 }
 
 fieldset{
@@ -57,6 +45,7 @@ gap: 20px;
     padding: 5px 10px;
     background-color: #F1F3FA;
     outline: none;
+    width: 100%;
 }
 
 textarea{
@@ -81,7 +70,7 @@ button{
 
     background-color: #A48676;
     border-radius: 7px;
-    color:black;
+    color:white;
     border: none;
     cursor: pointer;
 }
@@ -141,6 +130,7 @@ button{
     }
     
     .datos-contacto input{
+        width: 100%;
         border-radius: 10px;
         border: none;
         height: 30px;
@@ -171,7 +161,7 @@ button{
     
         background-color: #A48676;
         border-radius: 7px;
-        color:black;
+        color:white;
         border: none;
         cursor: pointer;
     }
