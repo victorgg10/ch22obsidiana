@@ -29,7 +29,7 @@ submit.addEventListener('submit', (e)=>{
       message => alert(message)
      
     ).then(
-      window.location.href = "http://127.0.0.1:5503/pages/contactoRecibido.html");
+      window.location.href = "contactoRecibido.html");
     
 });
 
