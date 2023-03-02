@@ -102,9 +102,9 @@
 
 
 
-  <iframe frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onload="resizeIframe(this)"  scrolling="no" ></iframe>
+  <iframe frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onresize="resizeIframe(this)"  scrolling="no" ></iframe>
 
-    
+
    <script>
     function resizeIframe(obj) {
       obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
