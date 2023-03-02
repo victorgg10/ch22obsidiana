@@ -20,7 +20,11 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    aspect-ratio: 100/80; /* relación de aspecto del iframe */
+    height: auto;
+     /* relación de aspecto del iframe */
   }
   
-  
+  .mapa-respo{
+    display: flex;
+    width: auto;
+  }
