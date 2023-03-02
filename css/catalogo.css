@@ -80,3 +80,24 @@ body{
 	box-shadow:0 0 20px #ccc;
 }
 
+@media(max-height:600px){
+	
+	
+	.flipbook-viewport {
+		overflow:auto;
+height: 80%;
+	
+	}
+
+}
+
+@media(max-height:600px){
+	
+	
+	.flipbook-viewport .flipbook{
+		
+		top: -200px;
+		
+	}
+
+}
