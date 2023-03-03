@@ -36,10 +36,10 @@
                 <article class="container-fluid row">
                     <div class="mes-nacimiento row justify-content-between">
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="enero" name="subject" type="submit" value="">Enero</button>
+                            <button class="mes" id="enero" onclick="seleccionMes(enero)" name="subject" type="submit" value="">Enero</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="febrero" name="subject" type="submit" value="">Febrero</button>
+                            <button class="mes" id="febrero" onclick="seleccionMes(febrero)" name="subject" type="submit" value="">Febrero</button>
                         </div>
 
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
@@ -82,18 +82,18 @@
         <section class=" row">
             <article class=" row justify-content-center resultado">
                 <a href="../images/filtrar/1.jpg" target="_blank" rel="noopener noreferrer">
-                    <img class="tu-piedra" src="../images/filtrar/1.jpg" alt="cuarzo-blanco">
+                    <img class="tu-piedra" id="img" src="../images/filtrar/1.jpg" alt="cuarzo-blanco">
                 </a>
                 <div>
-                    <h2 class="piedra">Cuarzo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi ipsam repellendus? Nesciunt ipsam soluta, error cum facilis quasi sequi, laborum libero quod atque sit voluptate! Optio,voluptatem. Eaque, dolorem.</p>
+                    <h2 class="piedra" id="piedra">Cuarzo</h2>
+                    <p id="resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi ipsam repellendus? Nesciunt ipsam soluta, error cum facilis quasi sequi, laborum libero quod atque sit voluptate! Optio,voluptatem. Eaque, dolorem.</p>
                 </div>
             </article>
         </section>
         <section></section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
+    <script src="../js/piedraNacInfo.js"></script>
     <script src="../barra.js"></script>
 </body>
 
