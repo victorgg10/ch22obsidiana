@@ -26,8 +26,8 @@
     </header>
     <!-- Main -->
     <main class="container-fluid">
-        <section class="row">
-            <form class=" row container-fluid" action="">
+        <section class="row container-fluid">
+            
                 <article class="row justify-content-center">
                     <h1 class="col-11 col-sm-11 text-center">Descubre tu piedra de nacimiento</h1>
                 </article>
@@ -36,48 +36,47 @@
                 <article class="container-fluid row">
                     <div class="mes-nacimiento row justify-content-between">
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="enero" onclick="seleccionMes(enero)" name="subject" type="submit" value="">Enero</button>
+                            <button class="mes" id="enero" onclick="resumenPiedraNacimiento('enero')" >Enero</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="febrero" onclick="seleccionMes(febrero)" name="subject" type="submit" value="">Febrero</button>
-                        </div>
-
-                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="marzo" name="subject" type="submit" value="">Marzo</button>
+                            <button class="mes" id="febrero" onclick="resumenPiedraNacimiento('febrero')" >Febrero</button>
                         </div>
 
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="abril" name="subject" type="submit" value="">Abril</button>
-                        </div>
-                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="mayo" name="subject" type="submit" value="">Mayo</button>
-                        </div>
-                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="junio" name="subject" type="submit" value="">Junio</button>
+                            <button class="mes" id="marzo" onclick="resumenPiedraNacimiento('marzo')" >Marzo</button>
                         </div>
 
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="julio" name="subject" type="submit" value="">Julio</button>
+                            <button class="mes" id="abril" onclick="resumenPiedraNacimiento('abril')" >Abril</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="agosto" name="subject" type="submit" value="">Agosto</button>
+                            <button class="mes" id="mayo" onclick="resumenPiedraNacimiento('mayo')" >Mayo</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="septiembre" name="subject" type="submit"
-                                value="">Septiembre</button>
+                            <button class="mes" id="junio" onclick="resumenPiedraNacimiento('junio')" >Junio</button>
+                        </div>
+
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="julio" onclick="resumenPiedraNacimiento('julio')" >Julio</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="octubre" name="subject" type="submit" value="">Octubre</button>
+                            <button class="mes" id="agosto" onclick="resumenPiedraNacimiento('agosto')" >Agosto</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="noviembre" name="subject" type="submit" value="">Noviembre</button>
+                            <button class="mes" id="septiembre" onclick="resumenPiedraNacimiento('septiembre')">Septiembre</button>
                         </div>
                         <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <button class="mes" id="diciembre" name="subject" type="submit" value="">Diciembre</button>
+                            <button class="mes" id="octubre" onclick="resumenPiedraNacimiento('octubre')" >Octubre</button>
+                        </div>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="noviembre" onclick="resumenPiedraNacimiento('noviembre')" >Noviembre</button>
+                        </div>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="diciembre" onclick="resumenPiedraNacimiento('diciembre')" >Diciembre</button>
                         </div>                        
                     </div>
                 </article>
-            </form>
+            
         </section>
         <section class=" row">
             <article class=" row justify-content-center resultado">
