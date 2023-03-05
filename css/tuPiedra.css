@@ -25,6 +25,20 @@ article {
     justify-content: center;
 }*/
 
+h1 {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    margin-left: 10%;
+}
+
+p,
+.piedra {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .mes-nacimiento {
     /*display: grid;
     grid-template-columns: auto auto auto auto auto auto;*/
@@ -36,8 +50,8 @@ article {
 }
 
 .mes {
-    margin: 1em 1em;
-    padding: 1em 4em;
+    margin: .5em;
+    padding: .5em 1.25em;
     background-color: --color6;
     border-radius: 1.5em;
     border: none;
@@ -47,8 +61,8 @@ article {
 
 .mes:hover,.pagar:hover{
     box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
-    background-color: --color4;
-    border: 1px solid var(--color5);
+    background-color: var(--color6);
+    border: 1px solid var(--color6);
 }
 
 .resultado {
@@ -59,14 +73,14 @@ article {
     justify-content: center;
 }
 
-.tu-piedra img{
+.tu-piedra, img {
     width: 100%;
     height: auto;
 }
 
 
 /* estilos de pagina "Confirma tu pedido*/
-.pedido{
+.pedido {
     background-color: --color1;
     margin: 5px 200px 10px 200px;
     display: grid;
@@ -109,4 +123,64 @@ td,th {
 
 table , .compra{
     font-family: 'Carrois Gothic', sans-serif;
+}
+
+.recomentationTitle {
+    margin-left: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.products {
+    width: 200px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1104px) {
+
+    .cardContainer {
+        width: 300px;
+
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .iconSimbol {
+        width: 80px;
+    }
+
+    .iconsContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btnsContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    article {
+        margin: auto;
+    }
+
+    .resultContaine {
+        margin: auto;
+    }
+
+    .recomentationTitle {
+        margin-left: 2em;
+    }
+
 }
