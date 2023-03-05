@@ -14,13 +14,13 @@ fetchHandler(pathName);
   });
 
 
-  function fetchHandler(event,id) {
+  function fetchHandler(id) {
     //displayLoading();
     if(id == null){
         id=1;
     }
-    const url = `https://mocki.io/v1/c99713b9-1d91-4321-a0ba-a6d4fbc185bb`;
-    //const url = `http://localhost:8080/pages/detalleProducto?id=${id}`;
+    //const url = `https://mocki.io/v1/c99713b9-1d91-4321-a0ba-a6d4fbc185bb`;
+    const url = `http://localhost:8080/pages/detalleProducto?id=${id}`;
     let grid = document.querySelector(".mainContainer");
     fetch(url,
         
