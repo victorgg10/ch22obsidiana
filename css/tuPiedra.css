@@ -73,11 +73,16 @@ p,
     justify-content: center;
 }
 
-.tu-piedra, img {
+.tu-piedra {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
+.tu-piedra:hover {
+	transform: scale(1.2);
+	transform-origin: left;
+}
 
 /* estilos de pagina "Confirma tu pedido*/
 .pedido {
@@ -144,6 +149,8 @@ table , .compra{
     height: auto;
 }
 
+
+
 @media only screen and (max-width: 1104px) {
 
     .cardContainer {
@@ -183,4 +190,86 @@ table , .compra{
         margin-left: 2em;
     }
 
+}
+
+
+
+
+
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+
+.contenedor-principal {
+    margin: 70px 10px 0px 10px;
+
+    
+}
+
+.contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+
+#flecha-izquierda, #flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.contenedor-principal .flecha-izquierda:hover,
+.contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.contenedor-principal, .flecha-izquierda {
+	left: 0;
+}
+
+.contenedor-principal, .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.contenedor-carousel, .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.contenedor-carousel, .carousel, .imagen {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 1px 10px rgba(0,0,0, .3);
+}
+
+.contenedor-carousel .carousel .imagen:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.contenedor-carousel, .carousel, .imagen, img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.imagen {
+    padding: 0px 10px 0px 10px ;
 }
