@@ -51,7 +51,7 @@ p,
 
 .mes {
     margin: .5em;
-    padding: .5em 1.25em;
+    padding: .5em 1.4em;
     background-color: --color6;
     border-radius: 1.5em;
     border: none;
@@ -201,11 +201,13 @@ table , .compra{
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
 
 .contenedor-principal {
-    margin: 70px 10px 0px 10px;
-
-    
+    margin: 30px 10px 10px 10px;
 }
-
+/* @media (min-width:300px) {
+    .contenedor-principal {
+        margin: 50px 20px 0px 20px;
+    }
+} */
 .contenedor-principal {
 	display: flex;
 	align-items: center;
@@ -228,8 +230,7 @@ table , .compra{
 	transition: .2s ease all;
 }
 
-.contenedor-principal .flecha-izquierda:hover,
-.contenedor-principal .flecha-derecha:hover {
+#flecha-izquierda:hover, #flecha-derecha:hover {
 	background: rgba(0,0,0, .9);
 }
 
@@ -244,7 +245,7 @@ table , .compra{
 /* ---- ----- ----- Carousel ----- ----- ----- */
 .contenedor-carousel {
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px 0px;
 	overflow: hidden;
 	scroll-behavior: smooth;
 }
@@ -254,8 +255,10 @@ table , .compra{
 	flex-wrap: nowrap;
 }
 
-.contenedor-carousel, .carousel, .imagen {
-	min-width: 20%;
+
+
+.imagen {
+	min-width: 25%;
 	transition: .3s ease all;
 	box-shadow: 5px 1px 10px rgba(0,0,0, .3);
 }
@@ -272,4 +275,14 @@ table , .compra{
 
 .imagen {
     padding: 0px 10px 0px 10px ;
+}
+
+footer{
+    font-size: 14px;
+    background-color: #202020;
+    padding: 50px;
+}
+li {
+    color: #fff;
+    list-style: none;
 }
