@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./css/principal.css">
     <title>OBSIDIANA</title>
 </head>
-<body>
+<body onresize="resizeIframe(document.querySelector('#adjusIframe'))">
 
 
     <!-- nav bar  <3--> 
@@ -78,6 +78,10 @@
                         <li>
                             <a href="./pages/contacto.html" class="parteF">Contacto</a>
                           </li>
+
+                          <li>
+                            <a href="./pages/login.html" class="parteF">Login</a>
+                          </li>
                       
                      
                     </ul>
@@ -85,23 +89,26 @@
                 </div>
               </section>
         </header>
-    <br>
+    
+
+    
+ <!--Carrusel-->
+
     <!--Mapa-->
     <style>
-        iframe {
-    display: block;
-    margin: 0 auto;
-    border: 2px solid black;
-    width: 1200px;
-    height: 700px;
-  }
-    </style>
+      iframe {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 1200px;
+  height: 700px;
+}
+  </style>
 
 <center><h2>Navega por el mapa para descubrir el mineral más representativo de cada estado, y presiona sobre ellos para más información</h2></center>
-    <iframe src="./mapa-minerales-rocas/index.html" width="1200" height="1500" ></iframe>
+  <iframe src="./mapa-minerales-rocas/index.html" width="1200" height="1500" ></iframe>
 
 <br><br><br>
-
 
 <!--Logos de redes sociales-->
     <div class="container-redes">
@@ -125,9 +132,12 @@
 
        </div>
    </div> 
+ 
+
     
-        
+  </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="./js/bar.js"></script>
 </body>
 </html>
+
