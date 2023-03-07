@@ -14,10 +14,9 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/barra.css">
-    <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="stylesheet" href="../css/tuPiedra.css">
 
-    <title>Encuentra tu piedra</title>
+    <title>Tu piedra de nacimiento</title>
 </head>
 
 <body>
@@ -27,77 +26,73 @@
     </header>
     <!-- Main -->
     <main class="container-fluid">
-        <section class="row">
-            <form class=" row container-fluid" action="">
+        <section class="row container-fluid">
+            
                 <article class="row justify-content-center">
-                    <p class="col-11 col-sm-11 text-center">Descubre tu piedra de nacimiento</p>
-                    <p class="col-11 text-center">¿Cuál es tu color favorito?</p>
+                    <h1 class="col-11 col-sm-11 text-center">Descubre tu piedra de nacimiento</h1>
                 </article>
-                <!-- Sección de signos zodiacales -->
-                <p class="row text-center">Selecciona el mes de nacimiento, nosotros hacemos el resto</p>
-                <article class="container-fluid row">                    
-                    <div class="mes-nacimiento row justify-content-center">
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="enero" name="subject" type="submit" value="">Enero</button>
+                <!-- Sección de meses del anio -->
+                <p class="row justify-content-center">Selecciona el mes de nacimiento, nosotros hacemos el resto</p>
+                <article class="container-fluid row">
+                    <div class="mes-nacimiento row justify-content-between">
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="enero" onclick="resumenPiedraNacimiento('enero')" >Enero</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="febrero" name="subject" type="submit" value="">Febrero</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="febrero" onclick="resumenPiedraNacimiento('febrero')" >Febrero</button>
                         </div>
-                        
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="marzo" name="subject" type="submit" value="">Marzo</button>
+
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="marzo" onclick="resumenPiedraNacimiento('marzo')" >Marzo</button>
                         </div>
-                        
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="abril" name="subject" type="submit" value="">Abril</button>
+
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="abril" onclick="resumenPiedraNacimiento('abril')" >Abril</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="mayo" name="subject" type="submit" value="">Mayo</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="mayo" onclick="resumenPiedraNacimiento('mayo')" >Mayo</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="junio" name="subject" type="submit" value="">Junio</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="junio" onclick="resumenPiedraNacimiento('junio')" >Junio</button>
                         </div>
-                        
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="julio" name="subject" type="submit" value="">Julio</button>
+
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="julio" onclick="resumenPiedraNacimiento('julio')" >Julio</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="agosto" name="subject" type="submit" value="">Agosto</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="agosto" onclick="resumenPiedraNacimiento('agosto')" >Agosto</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="septiembre" name="subject" type="submit" value="">Septiembre</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="septiembre" onclick="resumenPiedraNacimiento('septiembre')">Septiembre</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="octubre" name="subject" type="submit" value="">Octubre</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="octubre" onclick="resumenPiedraNacimiento('octubre')" >Octubre</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="noviembre" name="subject" type="submit" value="">Noviembre</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="noviembre" onclick="resumenPiedraNacimiento('noviembre')" >Noviembre</button>
                         </div>
-                        <div class="col-5 col-sm-2">
-                            <button class="mes" id="diciembre" name="subject" type="submit" value="">Diciembre</button>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <button class="mes" id="diciembre" onclick="resumenPiedraNacimiento('diciembre')" >Diciembre</button>
                         </div>                        
                     </div>
                 </article>
-            </form>
+            
         </section>
-        <section class=" row justify-content-center">
-            <article class="resultado">
+        <section class=" row">
+            <article class=" row justify-content-center resultado">
                 <a href="../images/filtrar/1.jpg" target="_blank" rel="noopener noreferrer">
-                    <img class="tu-piedra" src="../images/filtrar/1.jpg" alt="cuarzo-blanco">
+                    <img class="tu-piedra" id="img" src="../images/filtrar/1.jpg" alt="cuarzo-blanco">
                 </a>
                 <div>
-                    <p>Cuarzo</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi ipsam repellendus?
-                        Nesciunt
-                        ipsam soluta, error cum facilis quasi sequi, laborum libero quod atque sit voluptate! Optio,
-                        voluptatem. Eaque, dolorem.</p>
+                    <h2 class="piedra" id="piedra">Cuarzo</h2>
+                    <p id="resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi ipsam repellendus? Nesciunt ipsam soluta, error cum facilis quasi sequi, laborum libero quod atque sit voluptate! Optio,voluptatem. Eaque, dolorem.</p>
                 </div>
             </article>
         </section>
         <section></section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
+    <script src="../js/piedraNacInfo.js"></script>
     <script src="../barra.js"></script>
 </body>
 

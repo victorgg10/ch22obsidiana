@@ -94,29 +94,44 @@
     
  <!--Carrusel-->
 
-
     <!--Mapa-->
     <style>
-        iframe {
-    display: block;
-    margin: 0 auto;
-    border: 2px solid black;
-  }
-    </style>
+      iframe {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 1200px;
+  height: 700px;
+}
+  </style>
 
+<center><h2>Navega por el mapa para descubrir el mineral más representativo de cada estado, y presiona sobre ellos para más información</h2></center>
+  <iframe src="./mapa-minerales-rocas/index.html" width="1200" height="1500" ></iframe>
 
+<br><br><br>
 
-  <iframe id="adjusIframe" frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onload="resizeIframe(this)"  scrolling="no" ></iframe>
+<!--Logos de redes sociales-->
+    <div class="container-redes">
+          
+      <h1>Siguenos en nuestras redes</h1>
+      <div class="logos" style="display: flex; justify-content: center; gap: 10%;
+      padding-left: 30px">
 
+           <div class="facebook">
+           <a href="https://www.facebook.com/"><img src="./images/contacto/logoface.png" alt=""  ></a>
 
-   <script>
-    
-    function resizeIframe(obj) {
-      
-      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-     //console.log(obj.style.height)
-     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-    }
+           </div>
+
+           <div class="instagram">
+           <a href="https://www.instagram.com/"><img src="./images/contacto/instagramlogo.png" alt=""></a> 
+           </div>
+
+           <div  class="youtube">
+           <a href="https://www.youtube.com/"><img src="./images/contacto/youtubelogo.png" > </a>
+           </div>
+
+       </div>
+   </div> 
  
 
     
@@ -125,3 +140,4 @@
       <script src="./js/bar.js"></script>
 </body>
 </html>
+
