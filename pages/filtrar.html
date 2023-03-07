@@ -19,25 +19,25 @@
                   <ul>
                     <li>
                         <div>
-                            <input type="checkbox"/>
+                            <input type="checkbox" class="messageCheckbox" value="1"/>
                             <label>Agata</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox"/>
+                            <input type="checkbox" class="messageCheckbox" value="2"/>
                             <label>Amatista</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox"/>
+                            <input type="checkbox" class="messageCheckbox" value="3"/>
                             <label>Fluorita</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox"/>
+                            <input type="checkbox" class="messageCheckbox" value="4"/>
                             <label>Obsidiana</label>
                         </div>
                     </li>
@@ -51,14 +51,14 @@
                     <ul>
                         <li>
                             <div>
-                                <input type="checkbox"/>
+                                <input type="checkbox" class="messageCheckbox2" value="2"/>
                                 <label>Joyeria</label>
                                 
                             </div>
                         </li>
                         <li>
                             <div>
-                                <input type="checkbox"/>
+                                <input type="checkbox" class="messageCheckbox2" value="1"/>
                                 <label>Crudas</label>
                                 
                             </div>
@@ -67,122 +67,23 @@
                 </li>
 
             </ul>
+             <div>
+                <input type="submit" value="Filtrar" onclick=myFunction();>
+            </div>
         </aside>
 
         <main class="">
             <h1 class="filtrar-nuestros">Nuestros Productos</h1>
 
         <div class="grid">
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/1.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/2.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/3.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/4.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/5.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/6.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/7.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/8.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/9.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/10.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-            <div class="producto">
-                <a href="./detallesProducto.html">
-                    <img class="producto__imagen" src="../images/filtrar/11.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">Piedra</p>
-                        <p class="producto__precio">$25</p>
-                    </div>
-                </a>
-            </div>  <!--.producto-->
-           
-
-
-            <div class="grafico grafico--camisas"></div>
-            <div class="grafico grafico--node"></div>
+    
         </div>
         </main>
        
     </div>
 
     <script src="../barra.js"></script>
+    <script src="../js/filtrar.js"></script>
     
 </body>
 </html>

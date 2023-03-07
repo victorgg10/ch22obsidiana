@@ -10,12 +10,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/barra.css">
-    <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="stylesheet" href="../css/tuPiedra.css">
 
-    <title>Encuentra tu piedra</title>
+    <title>Tu piedra de nacimiento</title>
 </head>
 
 <body>
@@ -24,51 +25,191 @@
 
     </header>
     <!-- Main -->
-    <main>
-        <section>
-            <form action="">
-                <article>
-                    <p>Descubre tu piedra de nacimiento</p>
-                    <p>¿Cuál es tu color favorito?</p>
-                </article>
-                <!-- Sección de signos zodiacales -->
-                <article>
-                    <p>Selecciona el mes de nacimiento, nosotros hacemos el resto</p>
-                    <div class="mes-nacimiento">
-                        <button class="mes" id="enero" name="subject" type="submit" value="">Enero</button>
-                        <button class="mes" id="febrero" name="subject" type="submit" value="">Febrero</button>
-                        <button class="mes" id="marzo" name="subject" type="submit" value="">Marzo</button>
-                        <button class="mes" id="abril" name="subject" type="submit" value="">Abril</button>
-                        <button class="mes" id="mayo" name="subject" type="submit" value="">Mayo</button>
-                        <button class="mes" id="junio" name="subject" type="submit" value="">Junio</button>
-                        <button class="mes" id="julio" name="subject" type="submit" value="">Julio</button>
-                        <button class="mes" id="agosto" name="subject" type="submit" value="">Agosto</button>
-                        <button class="mes" id="septiembre" name="subject" type="submit" value="">Septiembre</button>
-                        <button class="mes" id="octubre" name="subject" type="submit" value="">Octubre</button>
-                        <button class="mes" id="noviembre" name="subject" type="submit" value="">Noviembre</button>
-                        <button class="mes" id="diciembre" name="subject" type="submit" value="">Diciembre</button>
+    <main class="container-fluid">
+        <section class="row container-fluid">
+
+            <article class="row justify-content-center">
+                <h1 class="col-11 col-sm-11 text-center">Descubre tu piedra de nacimiento</h1>
+            </article>
+            <!-- Sección de meses del anio -->
+            <p class="row justify-content-center">Selecciona el mes de nacimiento, nosotros hacemos el resto</p>
+            <article class="container-fluid row">
+                <div class="mes-nacimiento row justify-content-between">
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="enero" onclick="resumenPiedraNacimiento('enero')">Enero</button>
                     </div>
-                </article>
-            </form>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="febrero" onclick="resumenPiedraNacimiento('febrero')">Febrero</button>
+                    </div>
+
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="marzo" onclick="resumenPiedraNacimiento('marzo')">Marzo</button>
+                    </div>
+
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="abril" onclick="resumenPiedraNacimiento('abril')">Abril</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="mayo" onclick="resumenPiedraNacimiento('mayo')">Mayo</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="junio" onclick="resumenPiedraNacimiento('junio')">Junio</button>
+                    </div>
+
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="julio" onclick="resumenPiedraNacimiento('julio')">Julio</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="agosto" onclick="resumenPiedraNacimiento('agosto')">Agosto</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="septiembre"
+                            onclick="resumenPiedraNacimiento('septiembre')">Septiembre</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="octubre" onclick="resumenPiedraNacimiento('octubre')">Octubre</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="noviembre"
+                            onclick="resumenPiedraNacimiento('noviembre')">Noviembre</button>
+                    </div>
+                    <div class="col-5 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <button class="mes" id="diciembre"
+                            onclick="resumenPiedraNacimiento('diciembre')">Diciembre</button>
+                    </div>
+                </div>
+            </article>
+
         </section>
-        <section>
-            <article class="resultado">
-                <a href="../images/piedras-mes-nacimiento/cuarzo-blanco.jpg" target="_blank" rel="noopener noreferrer">
-                    <img class="tu-piedra" src="../images/piedras-mes-nacimiento/cuarzo-blanco.jpg" alt="cuarzo-blanco">
+        <section class=" row">
+            <article class=" row justify-content-center resultado">
+                <a href="../images/filtrar/1.jpg" target="_blank" rel="noopener noreferrer">
+                    <img class="tu-piedra" id="img"
+                        src="../images/mes-de-nacimiento/logo_obsidiana_sin_letras_cj9zvx.png" alt="cuarzo-blanco">
                 </a>
                 <div>
-                    <p>Cuarzo</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi ipsam repellendus?
-                        Nesciunt
-                        ipsam soluta, error cum facilis quasi sequi, laborum libero quod atque sit voluptate! Optio,
-                        voluptatem. Eaque, dolorem.</p>
+                    <h2 class="piedra" id="piedra">Que piedra escoger?</h2>
+                    <p id="resumen">En este espacio puedes saber qué piedra estaría acorde con tu personalidad. O quizás
+                        no sabes qué regalar en ese día tan especial a tu ser querido, en eso también podemos ayudarte,
+                        solo requerimos que selecciones el mes de nacimiento correspondiente y obtendrás la piedra que
+                        puede ir a la perfección con la persona, así como las características de la piedra. </p>
                 </div>
             </article>
         </section>
         <section></section>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <br>
+    <br>
+    <!-- Carousell -->
+    <div class="container-fluid contenedor-principal">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-6">
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+                            class="fas fa-angle-left"></i></button>
+                    <div class="contenedor-carousel">
+                        <div class="carousel">
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/1.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/2.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/3.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/4.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/5.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/6.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/7.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/8.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/9.jpg" alt=""></a>
+                            </div>
+                            <div class="imagen">
+                                <a href="#"><img src="../images/filtrar/10.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i
+                            class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- <div class="col-sm-11 col-md-10 col-lg-8"> -->
+                <div class=" col-sm-3 col-md-3">
+                    <ul>
+                        <li>
+                            INFORMACIÓN
+                        </li>
+                        <li>
+                            <a href="">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="">Quiénes somos</a>
+                        </li>
+                        <li>
+                            <a href="">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <ul>
+                        <li>
+                            POLÍTICAS
+                        </li>
+                        <li>
+                            <a href="">Facturación</a>
+                        </li>
+                        <li>
+                            <a href="">Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="">De devoluvión</a>
+                        </li>
+                        <li>
+                            <a href="">De envío</a>
+                        </li>
+                        <li>
+                            <a href="">Términos de servicio</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <ul>
+                        <li>
+                            ESTAMOS EN CONTACTO
+                        </li>
+                        <li>
+                            Cualquier pregunta puedes realizarla en nuestras redes sociales o en el formulario de
+                            contacto, te responderemos pronto para resolver tus dudas o brindarte información
+                            relacionada con tu compra.
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="../js/piedraNacInfo.js"></script>
     <script src="../barra.js"></script>
 </body>
 

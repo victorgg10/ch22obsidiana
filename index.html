@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/barra.css">
+    <link rel="stylesheet" type="text/css" href="./css/principal.css">
     <title>OBSIDIANA</title>
 </head>
-<body>
+<body onresize="resizeIframe(document.querySelector('#adjusIframe'))">
 
 
     <!-- nav bar  <3--> 
@@ -77,6 +78,10 @@
                         <li>
                             <a href="./pages/contacto.html" class="parteF">Contacto</a>
                           </li>
+
+                          <li>
+                            <a href="./pages/login.html" class="parteF">Login</a>
+                          </li>
                       
                      
                     </ul>
@@ -84,120 +89,37 @@
                 </div>
               </section>
         </header>
-    <br>
+    
+
+    
+ <!--Carrusel-->
 
     <!--Mapa-->
     <style>
       iframe {
-        display: block;
-        margin: 0 auto;
-      }
-    </style>
-    <iframe src="./mapa-minerales-rocas/index.html" width="1200" height="680"></iframe>
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+  
+  </style>
+<iframe id="adjusIframe" frameborder="0" src="./mapa-minerales-rocas/index.html" width="100%"  onload="resizeIframe(this)"  scrolling="no" ></iframe>
 
-<br><br><br>
 
-<!--Carrusel-->
-<style>
-  h1 {
-    text-align: center;
-    font-size: 400%;
-  }
-</style>
-
-<h1>Nuestras novedades</h1>
-
-    <style>
-.slideshow {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  .slides {
-    display: flex;
-    width: 400%;
-    animation: slide 20s infinite;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-      .slide {
-        width: 25%;
-      }
-      .slide img {
-        width: 100%;
-        height: 100%;
-      }
-      .slide p {
+<script>
+ 
+ function resizeIframe(obj) {
    
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    color: black;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    font-size: 200%;
-  }
-      @keyframes slide {
-        0% {
-          transform: translateX(0);
-        }
-        20% {
-          transform: translateX(0);
-        }
-        25% {
-          transform: translateX(-25%);
-        }
-        45% {
-          transform: translateX(-25%);
-        }
-        50% {
-          transform: translateX(-50%);
-        }
-        70% {
-          transform: translateX(-50%);
-        }
-        75% {
-          transform: translateX(-75%);
-        }
-        95% {
-          transform: translateX(-75%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
-   
-    <div class="slideshow">
-      <div class="slides">
-        <div class="slide">
-          <img src="./images/carrusel/pulsera.jpeg">
-          <p>Pulsera de esferas de Ágata</p>
-        </div>
-        <div class="slide">
-          <img src="./images/carrusel/rana.jpeg">
-          <p>Anillo de obsidiana dorada y alpaca, en forma de rana</p>
-        </div>
-        <div class="slide">
-          <img src="./images/carrusel/espejo.jpeg">
-          <p>Espejo de obsidiana negra</p>
-        </div>
-        <div class="slide">
-          <img src="./images/carrusel/ópalo.jpeg">
-          <p>Ópalo hialita. Fluorescente</p>
-        </div>
-      </div>
-    </div>
-    
-        
-    <!--dsdsd-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-      <script src="./js/bar.js"></script>
+   obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  //console.log(obj.style.height)
+  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+ }
+
+
+ 
+</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="./js/bar.js"></script>
 </body>
 </html>
+

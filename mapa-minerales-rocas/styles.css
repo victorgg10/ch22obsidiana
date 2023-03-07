@@ -1,5 +1,21 @@
 body {
     background-color:rgb(210, 234, 255);
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      height: auto;
+    }
+  }
+  
+  /* Estilos para pantallas de escritorio */
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+      height: auto;
+    }
   }
 
   header {
@@ -27,11 +43,11 @@ body {
     }
     
 path:hover, circle:hover {
-    stroke: #756261 !important;
-    stroke-width:2px;
-    stroke-linejoin: round;
-    fill: #756261 !important;
-    cursor: pointer;
+  stroke: #CDD3F5 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #A7B1EB !important;
+  cursor: pointer;
   }
  
   #info-box {
@@ -40,10 +56,18 @@ path:hover, circle:hover {
     top: 0px;
     left: 0px;
     z-index: 1;
-    background-color: #ffffff;
-    border: 2px solid #000000;
+    background-color: #e3e7fd;
+    border: 2px solid #8291E5;
     border-radius: 5px;
     padding: 12px;
     font-family: arial;
   }
-  
+ .ge{
+display: flex;
+align-items: center;
+ }
+ svg {
+  display: block;
+  margin: auto auto;
+  height: auto;
+}

@@ -1,0 +1,30 @@
+body {
+    font-size: 16px;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos para pantallas de escritorio */
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+     /* relación de aspecto del iframe */
+  }
+  
+  .mapa-respo{
+    display: flex;
+    width: auto;
+  }
