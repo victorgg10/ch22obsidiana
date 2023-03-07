@@ -47,7 +47,7 @@
             <input id="contraL" type="password" name="password" placeholder="Contraseña" required>
           </div>
           <p>OLVIDASTE TU CONTRASEÑA?</p>
-          <button onclick="revisarUsuarios()">INICIARC</button>
+          <button onclick="revisarUsuarios()" class="botonRev">INICIARC</button>
         </div>
       </form>
       <!-- vista registrarse frontbox -->
@@ -55,9 +55,9 @@
         <div class="signup hide">
           <h2>REGISTRARSE</h2>
           <div class="inputbox">
-            <input id="nombreR" type="text" name="nombre" placeholder="  Nombre Completo" required>
-            <input id="correoR" type="email" name="correo" placeholder=" Correo Electronico" required>
-            <input id="contraR" type="password" name="contraseña" placeholder=" Contraseña" required>
+            <input id="nombreR" type="text" name="nombre" placeholder="  Nombre Completo" required class="resizedTextbox">
+            <input id="correoR" type="email" name="correo" placeholder=" Correo Electronico" required class="resizedTextbox">
+            <input id="contraR" type="password" name="contraseña" placeholder=" Contraseña" required class="resizedTextbox">
           </div>
           <button id="boton" class="boton" type="submit" onclick="guardarUsuarios()">ENVIAR</button>
         </div>

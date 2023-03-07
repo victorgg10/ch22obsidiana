@@ -38,26 +38,25 @@
               
                     <h2>¿Cuál es tu color favorito?</h2>
              
-
-                <input class="inputAge" type="text" placeholder="Introduce tu color">
+                <input class="inputColor" type="text" placeholder="Introduce tu color" onkeyup="getColor(this.value)">
 
             </div>
 
             <div class="signosContainer">
                 <h2>Tu signo Zodiacal </h2>
                 <div class="iconsContainer">
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/acuario_ghrdkp.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/aries_eyofou.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/cancer_yhqepy.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932614/iconos_zodiaco/capricornio_m4xkco.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/geminis_iqdnsp.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/leo_jigpfn.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/libra_ahucvl.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/piscis_vbsvlj.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/capricornio_uy8hvp.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/escorpio_jsor1e.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/tauro_fdbl0m.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/virgo_fu3vc2.png" alt=""></div>
+                    <button class="iconSimbol" onclick="imageSelected('acuario')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/acuario_ghrdkp.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('aries')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/aries_eyofou.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('cancer')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/cancer_yhqepy.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('capricornio')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932614/iconos_zodiaco/capricornio_m4xkco.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('geminis')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/geminis_iqdnsp.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('leo')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/leo_jigpfn.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('libra')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/libra_ahucvl.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('piscis')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/piscis_vbsvlj.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('sagitario')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/capricornio_uy8hvp.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('escorpio')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/escorpio_jsor1e.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('tauro')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/tauro_fdbl0m.png" alt="" ></button>
+                    <button class="iconSimbol" onclick="imageSelected('virgo')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/virgo_fu3vc2.png" alt="" ></button>
                 </div>
             </div>
 
@@ -65,9 +64,9 @@
                 <h2>¿Cuál es tu rango de edad?</h2>
                 
                 <div class="btnsContainer">
-                    <button class="age"> 20-29 años</button>
-                    <button class="age"> 30-45 años</button>
-                    <button class="age"> 46-60 años</button>
+                    <button class="age" onclick="inputEdad('20-29')"> 20-29 años</button>
+                    <button class="age" onclick="inputEdad('30-45')"> 30-45 años</button>
+                    <button class="age" onclick="inputEdad('46-60')"> 46-60 años</button>
                 </div>
 
             </div>
@@ -77,71 +76,76 @@
     <article>
 
         <div class="titleResultContainer">
-            <h1>Eres un Cuarzo</h1>
+            <h1 id="titleResult"></h1>
         </div>
      
         <div class="resultContainer">
 
             <div class="imgResultContainer">
-            <img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676221997/findyourrock/who-s-denilo-4ioZ4zgslhg-unsplash_jfdhpm.jpg" alt="geoda_image">
+            <img id="imgResult" src="">
             </div>
-            
+         
             <div class="resultDescription">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo quo, quam mollitia incidunt
-                    officia, accusantium cupiditate temporibus eaque sapiente at in quia. Ducimus corporis beatae
-                    repudiandae tenetur sed reprehenderit.</p>
+              <p id="resultDescriptionSigno"></p>
+                <p id="resultDescription"></p>
             </div>
+
         </div>
 
     </article>
 
-    <div class="recomentadionContainer">
-        <h2 class="recomentationTitle">Te recomiendo:</h2>
-
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img class="products" src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676221998/findyourrock/viva-luna-studios-hYpHkpQG5ms-unsplash_sfjknu.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h4>Masajeador de piel</h4>
-                      <h5>$129.00 </h5>
-                    </div>
+    <div class="container-fluid contenedor-principal">
+      <div class="row justify-content-center">
+          <div class="col-11 col-sm-8">
+              <div class="contenedor-principal">
+                  <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+                          class="fas fa-angle-left"></i></button>
+                  <div class="contenedor-carousel">
+                      <div class="carousel">
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/1.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/2.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/3.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/4.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/5.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/6.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/7.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/8.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/9.jpg" alt=""></a>
+                          </div>
+                          <div class="imagen">
+                              <a href="#"><img src="../images/filtrar/10.jpg" alt=""></a>
+                          </div>
+                      </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img class="products" src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676221996/findyourrock/tiny-rituals-1EXtcYDlZ9M-unsplash_hzykca.jpg" class="d-block w-100" alt="...">
-                    <div  class="carousel-caption d-none d-md-block">
-                        <h4>10-Pulseras Cuarzo Puro</h4>
-                        <h5> $99.00</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="products" src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676221997/findyourrock/petr-sidorov-lZJxzr6BxFk-unsplash_hyhtxl.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h4>25 Runas</h4>
-                      <h5>$149 .00</h5>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                  <button role="button" id="flecha-derecha" class="flecha-derecha"><i
+                          class="fas fa-angle-right"></i></button>
               </div>
-        
-        
-    </div>
+          </div>
+      </div>
+  </div>
 
     
     <script src="../barra.js"></script>
+    <script src="../js/encuentraTupiedra.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="../js/piedraNacInfo.js"></script>
     <!-- bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
