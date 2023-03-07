@@ -71,3 +71,12 @@ align-items: center;
   margin: auto auto;
   height: auto;
 }
+.hola{
+  height: 7rem;
+  align-self: center;
+}
+.holaContenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
