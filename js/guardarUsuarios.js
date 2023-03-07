@@ -1,3 +1,5 @@
+
+
 //const boton = document.querySelector('.boton');
 const formularioRegistro = document.querySelector('.registro');
 const respuesta = document.querySelector('.respuesta');
@@ -13,52 +15,7 @@ const obtenerDatos = () => {
 };
 
 
-/*const postData = async () => {
-    const newUser = obtenerDatos();
-    try {
-        const response = await fetch ('http://localhost:3000/usuarios', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newUser)
-        });
-        if (response.ok) {
-            const jsonResponse = await response.json();
-            const {nombre, correo, contraseña} = jsonResponse;
-            respuesta.innerHTML = `
-            <ul>
-            se guardo la siguinte info: 
-            <li>${nombre}</li>
-            <li>${correo}</li>
-            <li>${contraseña}</li>
-            </ul>
-            `
-        }
-    } catch (error) {
-        console.log(error);
-    }
-};*/
- /*const url = 'http://localhost:3000/usuarios';
 
-const envio = (url = 'http://localhost:3000/usuarios') =>{
-    const data = obtenerDatos();
-    fetch(url, {
-    method: 'POST', // or 'PUT'
-    body: JSON.stringify(data), // data can be `string` or {object}!
-    headers:{
-        'Content-Type': 'application/json'
-    }
-    }).then(res => res.json())
-    .catch(error => console.error('Error:', error))
-    .then(response => console.log('Success:', response));
-}
-
-//formularioRegistro.addEventListener('submit', obtenerDatos);
-boton.addEventListener('click', (event) => {
-    event.preventDefault();
-    envio();
-});*/
 
 
 //obteniendo los datos del json
@@ -73,11 +30,8 @@ const boton = document.getElementById('boton');
 boton.addEventListener('click', ()=>{
 
     const url = 'http://localhost:3000/users';
-    const datos =  obtenerDatos(); /*{
-        nombre: document.getElementById('nombreR').value,
-        correo:document.getElementById('correoR').value,
-        contraseña: document.getElementById('contraR').value
-    };*/
+    const datos =  obtenerDatos();
+   
     
     fetch(url, {
       method: 'POST', 
