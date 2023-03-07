@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
   function fetchHandler(event) {
     //displayLoading();
-    const url = `https://mocki.io/v1/bb737269-cf20-4bef-87f1-53b928dafc79`;
-    //const url = `http://localhost:8080/pages/filtrar`;
+    //const url = `https://mocki.io/v1/bb737269-cf20-4bef-87f1-53b928dafc79`;
+ const url = `http://localhost:8080/pages/filtrar`;
     let grid = document.querySelector(".grid");
     fetch(url,
         
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded',function(){
        })*/
        
         data.forEach((element) => {
-          //console.log(element.name)
+          console.log(element.id)
           
           let a = `<div class="producto">
-          <a href="./detallesProducto.html?name=1">
+          <a href="./detallesProducto.html?name=${element.id}">
               <img class="producto__imagen" src=${element.dire} alt="imagen camisa">
               <div class="producto__informacion">
                   <p class="producto__nombre">${element.name}</p>
@@ -87,9 +87,12 @@ document.addEventListener('DOMContentLoaded',function(){
 function myFunction(){
     console.log("funcion inicio");
 
-    let formData = new FormData();
+    
 
     let materialesId = [];
+    let tiposId = [];
+    
+    let grid = document.querySelector(".grid");
 
 let inputElements = document.getElementsByClassName('messageCheckbox');
 for(let i=0; i <inputElements.length; i++){
@@ -98,28 +101,30 @@ for(let i=0; i <inputElements.length; i++){
       }
 }
 
-//console.log(materialesId);
-formData.append("materialesId",materialesId);
-
-localStorage.setItem("eyeyey", ["2","5"]);
-console.log("paso");
-
-/*
-var object = {};
-formData.forEach((value, key) => object[key] = value);
-var json = JSON.stringify(object);
-console.log(json);*/
+let inputTipos = document.getElementsByClassName('messageCheckbox2');
+for(let i=0; i <inputTipos.length; i++){
+      if(inputTipos[i].checked){
+        tiposId.push(inputTipos[i].value);                    
+      }
+}
 
 
-const url = `https://mocki.io/v1/bb737269-cf20-4bef-87f1-53b928dafc79`;
-//const url = `https://abf1f4a1-36f3-4d8a-aded-2aa4e755a2c2.mock.pstmn.io`;
+
+
+
+let _datos = {
+  materialesId: materialesId,
+  tiposId: tiposId
+}
+console.log(_datos);
+
+//const url = `https://mocki.io/v1/bb737269-cf20-4bef-87f1-53b928dafc79`;
+const url = `http://localhost:8080/pages/filtrar`;
 fetch(url, {
-  method: "POST", // or 'PUT'
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify("formData"),
-} )
+  method: "POST",
+  body: JSON.stringify(_datos),
+  headers: {"Content-type": "application/json; charset=UTF-8"}
+})
   .then((response) => response.json())
   .then( data => {
         setTimeout (()=>{
@@ -127,14 +132,14 @@ fetch(url, {
        imprimir =  JSON.stringify(data);
        console.log(Object.keys(data));
        console.log("hasta aqwui");
-       
+       grid.innerHTML="";
       // hideLoading();
        
         data.forEach((element) => {
           //console.log(element.name)
           
           let a = `<div class="producto">
-          <a href="./detallesProducto.html">
+          <a href="./detallesProducto.html?name=${element.id}">
               <img class="producto__imagen" src=${element.dire} alt="imagen camisa">
               <div class="producto__informacion">
                   <p class="producto__nombre">${element.name}</p>
@@ -142,6 +147,7 @@ fetch(url, {
               </div>
           </a>
       </div>  <!--.producto-->`;
+      
       grid.innerHTML+=a;
         }); 
 
